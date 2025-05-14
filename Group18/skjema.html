@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kupongbutikk | Narvesen</title>
+
+  
+  <link rel="stylesheet" href="style.css">
+  
+
+</head>
+<body>
+  
+  <div class="page">
+    
+<!-- Responsiv header, sender deg til index(hjem) -->
+    <header>
+      <a href="./index.html"> </a>
+    </header>
+    
+    <nav class="theme-blue">
+      <ul class="flex justify-evenly align-center">
+        <li>
+          <a href="./index.html">Hjem</a>
+        </li>
+        <li>
+          <a href="./produkter.html">Produkter</a>
+        </li>
+        <li>
+        <a href="./kampanje.html">Kampanjer</a>
+        </li>
+        <li>
+          <a href="./omoss.html">Om oss</a>
+        </li>
+        <li>
+          <a href="./skjema.html">Kupongbutikk</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>Kupongbutikk</h1>
+
+      <div class="slide-container">
+
+        <div class="mySlide">
+          <img src="./Bilder/kaffe2.jpg" style="width:100%" alt="Bilde av kupong av kaffe">
+        </div>
+
+        <div class="mySlide">
+          <img src="./Bilder/lunsj.jpg" style="width:100%" alt="Bilde av kupong av lunsj">
+        </div>
+
+        <div class="mySlide">
+          <img src="./Bilder/is2.jpg" style="width:100%" alt="Bilde av kupong av is">
+        </div>
+
+        <div class="mySlide">
+          <img src="./Bilder/kvikklunsj.jpg" style="width:100%" alt="Bilde av kupong av kvikklunsj">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+      </div>
+
+      <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlide");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          slides[slideIndex-1].style.display = "block";  
+        }
+      </script>
+
+      
+      <div class="flex justify-evenly align-center width margin-top borderreg">
+      <img src="./Bilder/kupongbutikk.jpg" class="imagewidthkupong imgshadow column" alt="Bilde av kupongbutikk">
+
+      <article>
+        <div class="kupongtxt-width column">
+        <h2 class="index-h2">Vår digitale Kupongbutikk</h2>
+        <p class="kupong-p">Vår kupongbutikk går ut på at du kan bestille digitale kuponger til andre. 
+          Dette kan være et familiemedlem, en kollega, eller en venn.</p>
+        <div>
+        <p class="kupong-p">Noen av kupongene vi tilbyr er blant annet: Kaffe, en god lunsj, små-is, og kvikklunsj.</p>
+        </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="flex justify-evenly margin-top width reg-container borderreg">
+    <div class="container-skjema column">
+      <form name="myForm" onsubmit="return validateForm()" method="post" action="skjema.html">
+        <div class="row">
+          <div class="col-label">
+        <label for="fNam">Fornavn: </label>
+          </div>
+        <div class="col-width75">
+        <p><input type="text" id="fNam" placeholder="Fornavn.."></p>
+          </div>
+           </div>
+
+        <div class="row">
+          <div class="col-label">
+        <label for="lNam">Etternavn: </label>
+          </div>
+
+        <div class="col-width75">
+        <p><input type="text" id="lNam" placeholder="Etternavn.."></p>
+          </div>
+            </div>
+
+        <div class="row">
+          <div class="col-label">
+        <label for="Age">Alder: </label>
+          </div>
+
+        <div class="col-width75">
+        <p><input type="text" id="Age" placeholder="Alder mellom 18 - 200.."></p>
+          </div>
+            </div>
+
+        <div class="row">
+          <div class="col-label">
+        <label for="Address">Adresse: </label>
+          </div>
+
+        <div class="col-width75">
+        <p><input type="text" id="Address" placeholder="Gateadresse.."></p>
+          </div>
+            </div>
+
+        <div class="row">
+          <div class="col-label">
+        <label for="Postnr">Postnr: </label>
+          </div>
+
+        <div class="col-width75">
+        <p><input type="text" id="Postnr" placeholder="Postnummer.."></p>
+        </div>
+          </div>
+
+        <div class="row">
+          <div class="col-label">
+        <label for="Poststd">Poststed: </label>
+          </div>
+            </div>
+            
+        <div class="col-width75">
+        <p><input type="text" id="Poststd" placeholder="Poststed.."></p>
+          </div>
+
+        <div class="row">
+          <div class="col-label">
+        <label for="Tlf">Telefon: </label>
+          </div>
+
+        <div class="col-width75">
+        <p><input type="text" id="Tlf" placeholder="(+xx xx xx xx xx)"></p>
+          </div>
+            </div>
+      
+        <div class="buttons">
+          <div class="row">
+        <input type="submit" value="Send" name="send">
+          </div>
+          <div class="row">
+        <input type="reset" value="Reset" name="reset">
+        </div>
+        </div>
+
+        <script src="javascript.js"></script>
+      </form>
+    </div>
+
+    <article class="reg">
+      <div class="column">
+      <h2 class="index-h2">Registrering</h2>
+      <p class="kupong-p">Ved registrering på våre sider får du tilgang til enkel 
+        og effektiv bestilling av våre kuponger. <br> <br>Kupongene blir sendt til ditt telefonnummer,
+        eller postadresse avhengig av din preferanse. <br> <br> Lettere for deg å handle i våre 
+        fysiske butikker. Ved kjøp får du din kvittering lagret, og tilgjengelig for disposisjon til en senere anledning.
+        <br> <br>Registrering er helt gratis, og er proppfull av fordeler for deg som kunde.</p>
+      </div>
+    </article>
+    </div>
+    </main>
+  
+ 
+    <footer class="align-center justify-between">
+      <!-- Hvis du trykker på narvesen logo i footer2 kommer man inn i ny page med kilder og opphavsrett-->
+    <div class="flex align-center logo">
+      <a href=opphavsrett.html><img src="https://i.postimg.cc/wvC6dYnF/Narvesenlogo4.png" id="img3" alt="Bilde av Narvesen logo"></a>
+      <p class="copyright">©2022 Narvesen</p>
+     </div>
+
+     <div class="kontakt">
+      <a href="mailto:kontakt@narvesen.no">Kontakt oss</a>   
+    </div>  
+
+     <div>
+     <p class="dato">Dato startet <br> Oblig 1: 04.10.2022 <br>Oblig 2: 03.11.2022</p>
+    </div>   
+
+  </footer>
+
+ </div>
+</body>
+</html>

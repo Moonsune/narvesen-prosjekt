@@ -1,0 +1,671 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+
+.align-center {
+  align-items: center;
+}
+
+header, nav, main, footer, section {
+  display: flex;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+header {
+  align-items: center;
+  justify-content: center;
+  background-image: url("./Bilder/narvesenlogo5.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1200px;
+}
+
+header a {
+    width: 100%;
+    height: 200px;
+}
+
+
+nav a {
+  float: left;
+}
+
+
+nav {
+  padding: 5px;
+  display: inline-block;
+}
+
+nav a {
+  padding: 12px;
+  width: 125px;
+  background-color: rgba(20, 20, 20, 0.342);
+  text-decoration: none;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  transition: background-color 300ms;
+  border-radius: 25px;
+  font-weight: bold;
+  
+}
+
+nav a:hover {
+  background-color: rgba(75, 75, 134, 0.575);
+}
+
+main {
+  flex-direction: column;
+}
+
+
+h1 {
+  font-size: 40px;
+  margin-top: 2.5%;
+  text-align: center;
+  font-weight: bolder;
+  color: #001e3f;
+}
+
+h2.aboutus-h2 {
+  margin-top: 2.5%;
+  text-align: center;
+  font-weight: bolder;
+  color: #143355;
+}
+
+h2.index-h2 {
+  font-size: 35px;
+  margin-top: 2.5%;
+  text-align: center;
+  font-weight: bolder;
+  color: #143355;
+}
+
+p.aboutus-p {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bolder;
+  color: #001e3fa4;
+}
+
+p.index-p {
+  font-size: 25px;
+  text-align: center;
+  font-weight: bolder;
+  color: #001e3fa4;
+}
+
+p.produkt1-p, .kampanje1-p {
+  font-size: 25px;
+  width: 30%;
+  text-align: center;
+  font-weight: bolder;
+  color: #001e3fa4;
+}
+
+p.opphav-p {
+  font-weight: 500;
+  color: #001e3fdc;
+}
+
+h2.opphav-h2 {
+  font-weight: bolder;
+  color: #001e3fa4;
+}
+
+p.produkt2-p, .kampanje2-p {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 500;
+  color: #001e3fdc;
+}
+
+p.kupong-p {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 500;
+  color: #001e3fdc;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-weight: bold;
+}
+
+
+.kilder {
+  list-style: none;
+  text-align: left;
+}
+
+.kilder a {
+  text-decoration-style: solid;
+  color: black;
+  border-radius: 50%;
+}
+
+.ver-align {
+  vertical-align: top;
+}
+
+.indextxt-width {
+  width: 30%;
+  display: block;
+}
+
+.kupongtxt-width {
+  display: block;
+}
+
+.opphav-display {
+  display: block;
+}
+
+.imageindex {
+  display: block;
+  width: 35%; 
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  object-fit: cover;
+}
+
+.imagewidth {
+  width: 30%;
+}
+
+.imagewidthkupong {
+  width: 50%;
+}
+
+.imagewidthpromo {
+  width: 70%;
+}
+
+.reg-container {
+  align-items: center;
+}
+
+.container-skjema {
+  border-radius: 15px;
+  background-color: #d7e0ec;
+  padding: 20px;
+  width: 50%;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #0060C7;
+  border-radius: 10px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+input[type=submit] {
+  width: 20%;
+  padding: 10px;
+  background-color: #001e3f;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  float: left;
+}
+
+input[type=reset] {
+  width: 20%;
+  margin-left: 10px;
+  padding: 10px;
+  background-color: #001e3f;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  float: left;
+}
+
+.buttons {
+  margin-left: 18%;
+}
+
+.col-label {
+  float: left;
+  width: 18%;
+  margin-top: 5px;
+}
+
+.col-width75 {
+  float: left;
+  width: 75%;
+  margin-top: 5px;
+}
+
+.col-width50 {
+  float: left;
+  width: 50%;
+  margin-top: 5px;
+}
+
+.col-width28 {
+  float: left;
+  width: 28%;
+  margin-top: 5px;
+}
+
+.marginleft {
+  margin-left: 37px;
+}
+
+.margin-top {
+  margin-top: 40px;
+}
+
+img {
+  border-radius: 15px;
+  display: block;
+  width: 100%;
+}
+
+.imgshadow {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.flex > div > p {
+  height: 50px;
+}
+
+.flex > div > img {
+  transition: 0.2s;
+}
+
+.flex > div > img:hover {
+  transform: scale(1.02);
+}
+
+section {
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+article {
+  box-sizing:border-box;
+  justify-content: center;
+  width: 35%;
+  background-color: white;
+  display: flex;
+}
+
+
+
+section.tredelt {
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+section.tredelt article {
+    width: 33.3%;
+    min-width: 370px;
+    align-items: center;
+    flex-direction: column;
+    padding: 12px;
+}
+
+section.app-promo {
+    align-items: center;
+    flex-direction: column;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, td, th {
+  border: 1px solid;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+tr:nth-child(even) {background-color: #abc2db;}
+
+tr:hover  {background-color: #00000073;}
+
+
+.tredelt .underoverskrift {
+    width: 100%;
+}
+
+/*Eksempel på map utseende*/
+.map {
+    width: 100%;
+    height: auto;
+    background-color: #062648;
+}
+
+img.promo {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  margin-top: 50px;
+  position: relative;
+  bottom: 0;
+  background-color: #003164;
+  width: 100%;
+  height: 80px;
+}
+
+.kontakt a {
+  position: relative;
+  padding: 15px;
+  background-color: rgba(20, 20, 20, 0.342);
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition: background-color 300ms;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+
+.kontakt a:hover {
+  background-color: rgba(75, 75, 134, 0.575);
+}
+
+.logo {
+  position: relative;
+  bottom: 0;
+  height: auto;
+}
+
+.logo a {
+  position: relative;
+  border-radius: 50%;
+  align-items: center;
+  text-align: center;
+
+}
+
+.logo a:hover {
+  filter: brightness(1.4);
+}
+
+#img3 {
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 50%;
+}
+
+.dato {
+  font-weight: bold;
+  font-size: 12px;
+  color: white;
+}
+
+.copyright {
+  margin-left: 5px;
+  font-size: small;
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+
+.theme-blue {
+  background-color: #003164;
+  color: white;
+}
+
+.slide-container {
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlide {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(32, 32, 32, 0.397);
+}
+
+
+@media screen and (max-width: 1024px) {
+
+  .slide-container {
+    display: none;
+  }
+
+  h1 {
+    font-size: 33px;
+  }
+
+  h2.index-h2 {
+    font-size: 28px;
+  }
+
+  p.index-p {
+    font-size: 20px;
+  }
+
+  p.produkt2-p, .kampanje2-p {
+    font-size: 20px;
+  }
+
+  .imagewidthpromo {
+    width: 80%;
+    
+  }
+
+  p.produkt1-p, .kampanje1-p {
+    width: 70%;
+  }
+
+  .kupongtxt-width {
+    width: 100%;
+  }
+
+  p.kupong-p {
+    font-size: 20px;
+  }
+
+  .imagewidthkupong {
+    width: 60%;
+  }
+
+  .col-label {
+    width: 100%;
+  }
+
+  input[type=submit] {
+    width: 75%;
+    margin-left: 0;
+  }
+
+  input[type=reset] {
+    margin-top: 15px;
+    width: 75%;
+    margin-left: 0;
+  }
+
+  .buttons {
+    margin-left: 0;
+  }
+
+
+  .borderreg {
+    border-radius: 15px;
+    border: solid;
+    border-width: 3px;
+    border-color: #ABC2DB;
+    margin-top: 0.8em;
+    }
+    
+
+  }
+  
+
+@media screen and (max-width: 641px) {
+
+  nav li {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+nav ul {
+  flex-direction: column;
+
+}
+
+.column {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.width {
+  flex-direction: column;
+}
+
+.border {
+border-radius: 15px;
+border: solid;
+border-width: 3px;
+border-color: #ABC2DB;
+margin-top: 0.8em;
+}
+
+.imageindex {
+  width: 95%; 
+}
+
+.imagewidth {
+  width: 85%;
+}
+
+.indextxt-width {
+  width: fit-content;
+}
+
+.copyright {
+  display: none;
+}
+
+.dato {
+  display: none;
+}
+
+.kontakt {
+  text-align: right;
+  margin-right: 50px;
+  
+}
+
+p.produkt2-p, .kampanje2-p {
+  font-size: 25px;
+}
+
+header {
+  align-items: center;
+  justify-content: center;
+  background-image: url("./Bilder/narvesenlogoresize480.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+header a {
+  width: 100%;
+  height: 200px;
+}
+
+p.produkt1-p, .kampanje1-p {
+  width: 90%;
+}
+
+.imagewidthpromo {
+  width: 90%;
+}
+
+.imagewidthkupong {
+  width: 90%;
+}
+
+p.kupong-p {
+  font-size: 20px;
+}
+
+.col-width75, .col-label, input[type=submit] {
+  width: 100%;
+  margin-top: 0;
+  
+}
+
+input[type=reset] {
+  width: 100%;
+}
+
+.reg-container {
+  align-items: center;
+}
+
+.margin-top {
+  margin-top: 10px;
+}
+
+}
