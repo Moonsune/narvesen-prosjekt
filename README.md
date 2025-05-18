@@ -8,4 +8,7 @@ Dette er en enkel webapplikasjon laget med **kun HTML, CSS og JavaScript**
 - RegExr
 - CSS3
 
+## GitHub Pages
+https://moonsune.github.io/narvesen-prosjekt/
+
 ## Dato ferdigstilt: 13. Oktober 2022
